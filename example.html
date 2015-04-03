@@ -1,0 +1,80 @@
+<html>
+<head>
+
+    <title>Pages.js Example</title>
+
+    <link rel="stylesheet" href="pages.js.css" />
+
+    <style>
+    
+        body {
+            background-color: #eee;
+        }
+    
+        .site-wrapper {
+            margin: 20px;
+        }
+    
+        a {
+            border: 1px solid black;
+            color: #3333CC;
+            text-decoration: none;
+            padding: 10px;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <div id="site-wrapper" class="site-wrapper">
+        <a id="pages-nav-main" href="#/main">main</a></li>
+        <a id="pages-nav-about" href="#/about">about</a></li>
+        <a id="pages-nav-help" href="#/help">help</a></li>
+    
+        <div id="page-main" class="page">
+            <div class="page-header"></div>
+            <hr/>
+            <h4>Pages.js</h4>
+            
+            <p>
+            Pages.js is a javascript library for creating simple pages on a
+            single HTML page.  Javascript 'Classes' are created to describe 
+            the operation of each page, and the Pages.js library handles all
+            the logic for loading, unloading, and navigating to each page.
+            </p>
+            
+            <p>
+            Click on the navigation links above to get to each page.
+            </p>
+        </div>
+        
+        <div id="page-about" class="page">
+            <div class="page-header"></div>
+            <hr/>
+            <h4>About Pages.js</h4>
+        </div>
+        
+        <div id="page-help" class="page">
+            <div class="page-header"></div>
+            <hr/>
+            <h4>Pages.js FAQ and list of gotchas</h4>
+        </div>
+    
+    </div>
+    
+    <script src="jquery-v2.1.3-min.js"></script>
+    <script src="Pages.js"></script>
+    
+    <script src="PageMain.js"></script>
+    <script src="PageAbout.js"></script>
+    <script src="PageHelp.js"></script>
+    
+    <script>
+        (function() {
+            Pages.init();
+        })();
+    </script>
+
+</body>
+</html>

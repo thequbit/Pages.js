@@ -1,0 +1,9 @@
+.page {
+    display: none;
+}
+
+.pages-nav-highlight {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
