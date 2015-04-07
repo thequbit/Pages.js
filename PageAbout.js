@@ -1,11 +1,13 @@
 
 var PageAbout = {
 
+    name: 'about',
+    id: 'page-about',
     load: function(doneCallback) {
         
         // do async things here, and then call doneCallback() to display page.
         
-        doneCallback();
+        doneCallback('about');
     },
     unload: function() {
         
@@ -17,4 +19,4 @@ var PageAbout = {
 };
 
 // register page with Pages tool
-Pages.registerPage('about','page-about', PageAbout);
+Pages.registerPage(PageAbout);

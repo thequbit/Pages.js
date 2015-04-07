@@ -1,11 +1,14 @@
 
 var PageMain = {
 
+    name: 'main',
+    id: 'page-main',
     load: function(doneCallback) {
         
         // do async things here, and then call doneCallback() to display page.
         
-        doneCallback();
+        console.log('PageMain.load(): doneCallback()');
+        doneCallback('main');
     },
     unload: function() {
         
@@ -17,4 +20,4 @@ var PageMain = {
 };
 
 // register page with Pages tool
-Pages.registerPage('main','page-main', PageMain);
+Pages.registerHomePage(PageMain);

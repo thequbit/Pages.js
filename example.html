@@ -11,6 +11,11 @@
             background-color: #eee;
         }
     
+        .site-loading {
+            text-align: center;
+            width: 100%;
+        }
+    
         .site-wrapper {
             margin: 20px;
         }
@@ -26,6 +31,10 @@
 
 </head>
 <body>
+
+    <div id="site-loading" class="site-loading">
+        <h3>loading ...</h3>
+    </div>
 
     <div id="site-wrapper" class="site-wrapper">
         <a id="pages-nav-main" href="#/main">main</a></li>
@@ -72,7 +81,11 @@
     
     <script>
         (function() {
-            Pages.init();
+            Pages.init({
+                'page-title-element': 'h3',
+                'site-div-id': 'site-wrapper',
+                'site-loading-div-id': 'site-loading',
+            });
         })();
     </script>
 

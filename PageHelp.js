@@ -1,11 +1,13 @@
 
 var PageHelp = {
 
+    name: 'help',
+    id: 'page-help',
     load: function(doneCallback) {
         
         // do async things here, and then call doneCallback() to display page.
         
-        doneCallback();
+        doneCallback('help');
         
     },
     unload: function() {
@@ -18,4 +20,4 @@ var PageHelp = {
 };
 
 // register page with Pages tool
-Pages.registerPage('help','page-help', PageHelp);
+Pages.registerPage(PageHelp);
